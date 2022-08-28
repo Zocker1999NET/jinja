@@ -955,6 +955,8 @@ override a macro in a parent template. The following will output
     {% macro foo() %}CHILD{% endmacro %}
     {% block body %}{{ foo() }}{% endblock %}
 
+.. versionadded:: 3.2.0 Added support for trailing commas in macro signatures
+
 
 .. _call:
 
@@ -1920,6 +1922,9 @@ use the ``set`` tag::
 
    In older versions of Jinja (before 2.9) it was required to enable this
    feature with an extension.  It's now enabled by default.
+
+.. versionadded:: 3.2.0 Added support for trailing commas in with statements
+
 
 .. _autoescape-overrides:
 
